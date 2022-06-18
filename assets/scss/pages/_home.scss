@@ -1,0 +1,210 @@
+$home-font: "Montserrat";
+$home-btn-color: #90b928;
+
+@media (min-width: 768px) {
+    .home-nav {
+        height: 1081px;
+        .navbar-nav {
+            border-bottom: 0 !important;
+        }
+    }
+
+    #home-carousel {
+        height: 983px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-nav {
+        margin-bottom: 150px !important;
+    }
+
+    .home-about-us-sacks {
+        display: inline-block !important;
+        position: absolute;
+        right: 0px;
+        bottom: -70px;
+        overflow: hidden !important;
+
+        img {
+            transform: translate(45%, 0%);
+        }
+    }
+
+    .home-about-us {
+        margin-bottom: 150px;
+    }
+
+    .home-animals {
+        margin-bottom: 100px !important;
+    }
+
+    .home-contact-us-sack {
+        display: inline-block !important;
+        position: absolute;
+        left: 0px;
+        bottom: -290px;
+        overflow: hidden !important;
+
+        img {
+            transform: translate(-25%, 0%);
+        }
+    }
+
+    .home-contact-us {
+        margin-bottom: 350px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-about-us-sacks {
+        img {
+            transform: translate(25%, 0%);
+        }
+    }
+}
+
+#home {
+    font-family: $home-font;
+}
+
+.home-nav {
+    background-image: url(/assets/img/back-ground/home-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+
+    .navbar {
+        border-bottom: 0;
+        .navbar-nav{
+            border-bottom: 2px solid rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+
+    .nav-link {
+        color: #e8e8e8 !important;
+
+        &.active p {
+            color: #ffffff !important;
+            &::after {
+                display: block;
+                border-bottom: 3px solid #ffffff !important;
+                width: 22px;
+                content: "";
+                margin: auto;
+            }
+        }
+    }
+}
+
+#home-carousel {
+    .owl-carousel{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .owl-prev,
+        .owl-next{
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.home-btn {
+    padding: 9px 50px;
+    color: $home-btn-color;
+    border: 1px solid $home-btn-color;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        color: white;
+        background-color: $home-btn-color;
+        box-shadow: none;
+    }
+}
+
+.home-about-us-sacks {
+    z-index: -1;
+    display: none;
+}
+
+.home-contact-us-sack {
+    z-index: -1;
+    display: none;
+}
+
+.home-animals {
+    overflow: hidden;
+}
+
+.home-chicken-card {
+    background-image: url(/assets/img/home-chicken-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478px;
+
+    .home-chicken-card-inner {
+        opacity: 0;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 86%, #000000 100%);
+        height: 478px;
+    }
+
+    .home-chicken-card-text {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    &:hover .home-chicken-card-inner {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.home-cow-card {
+    height: 478px !important;
+
+    .home-cow-card-inner {
+        width: 100%;
+        height: 100%;
+        background-image: url(/assets/img/home-cow-img.png);
+        background-position: center;
+        &:hover .img-overlay {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    }
+
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        opacity: 0;
+
+        .img-overlay-icon {
+            padding: 30px 50px;
+            border: 1px solid white;
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+        }
+    }
+}

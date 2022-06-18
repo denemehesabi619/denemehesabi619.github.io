@@ -1,0 +1,51 @@
+$contact-us-form-font :'Helvetica Neue';
+$contaxt-us-form-color : #90b928;
+
+@mixin contact-us-btn {
+    color: #fff;
+    background-color: $contaxt-us-form-color;
+}
+
+@media (min-width: 768px) {
+    #contact-us {
+        margin-top: 170px;
+        margin-bottom: 170px !important;
+    }
+}
+
+#contact-us{
+    margin-bottom: 70px;
+    font-family: 'Montserrat';
+}
+
+.contact-us-input{
+    font-family: $contact-us-form-font;
+    color: #bababa;
+    border: 1px solid #bababa;
+    padding: 15px 25px;
+}
+
+.contact-us-input{
+    &:focus{
+        color: $contaxt-us-form-color !important;
+        border: 1px solid $contaxt-us-form-color !important;
+        box-shadow: none;
+        &::placeholder{
+            color: $contaxt-us-form-color !important;
+        }
+    }
+}
+
+.contact-us-btn{
+    font-family: $contact-us-form-font;
+    padding: 10px 35px;
+    border: 1px solid $contaxt-us-form-color;
+    color: $contaxt-us-form-color;
+    &:hover{
+        @include contact-us-btn;
+    }
+    &:focus{
+        @include contact-us-btn;
+        box-shadow: none;
+    }    
+}

@@ -1,0 +1,131 @@
+$fermatv-header-font: "Montserrat Bold";
+$fermatv-text-font: "Montserrat";
+$fermatv-search-color: #bababa;
+$fermatv-card-header-font: "Montserrat Medium";
+$fermatv-pages-button-color: #90b928;
+
+@mixin fermatv-pages-button {
+    box-shadow: 0px 5px 7px 0px rgba($color: $fermatv-pages-button-color, $alpha: 0.5);
+    color: white;
+    background-color: $fermatv-pages-button-color;
+}
+
+@media (min-width: 768px) {
+    .fermatv-search {
+        width: 50% !important;
+    }
+
+    .fermatv-card-text {
+        padding: 25px 70px !important;
+    }
+}
+
+#fermatv {
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+}
+
+.fermatv-header {
+    font-family: $fermatv-header-font;
+    margin-bottom: 30px;
+}
+
+.fermatv-text {
+    font-family: $fermatv-text-font;
+    margin-bottom: 50px;
+}
+
+.fermatv-search {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid $fermatv-search-color;
+    margin-bottom: 80px;
+}
+
+.fermatv-search-input {
+    text-align: center;
+    width: 100%;
+    border: 0;
+    &:focus {
+        box-shadow: none;
+    }
+    &::placeholder {
+        color: $fermatv-search-color;
+    }
+}
+
+.fermatv-search-btn {
+    border: 0;
+    background-color: white;
+    color: $fermatv-search-color;
+}
+
+.fermatv-card {
+    background-color: #f7f7f7;
+    &:hover {
+        cursor: default;
+    }
+
+    .fermatv-card-text {
+        padding: 30px;
+    }
+
+    .fermatv-card-header {
+        font-family: $fermatv-card-header-font;
+        margin-bottom: 30px;
+    }
+
+    .fermatv-card-img-inner {
+        position: relative;
+        &:hover .img-overlay {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000, $alpha: 0.4);
+            opacity: 0;
+        }
+
+        .img-overlay-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 5.5rem;
+            color: white;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.fermatv-pages {
+    display: flex;
+    justify-content: center;
+    button {
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid $fermatv-pages-button-color;
+        color: $fermatv-pages-button-color;
+        margin-right: 7px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            @include fermatv-pages-button;
+        }
+        
+        &:focus {
+            @include fermatv-pages-button;
+        }
+    }
+}

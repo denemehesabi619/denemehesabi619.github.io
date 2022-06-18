@@ -1,0 +1,72 @@
+#products {
+    font-family: "Montserrat";
+}
+
+@media (min-width: 576px) {
+    .products-kinds-buttons {
+        display: flex;
+        flex-direction: row !important;
+
+        .products-kinds-button {
+            padding: 5px 30px;
+            margin-right: 14px !important;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .products-head {
+        background-image: url(/assets/img/back-ground/products-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 478px;
+        margin-bottom: 80px !important;
+
+        .products-head-inner {
+            opacity: 0.5;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.93) 68%, #000000 100%);
+            height: 478px;
+        }
+    }
+
+    .products-breadcrumb {
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+}
+
+.products-kinds-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+    .products-kinds-button {
+        font-size: 15px;
+        display: inline-block;
+        border: 1px solid $product-info-color !important;
+        color: $product-info-color !important;
+        border-radius: 5px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        &:hover {
+            background-color: $product-info-color;
+            color: white !important;
+        }
+        &:focus {
+            background-color: $product-info-color;
+            color: white !important;
+            box-shadow: none;
+        }
+        &.selected {
+            background-color: $product-info-color !important;
+            color: white !important;
+            box-shadow: none;
+        }
+        &:last-child {
+            margin-right: 0 !important;
+        }
+    }
+}

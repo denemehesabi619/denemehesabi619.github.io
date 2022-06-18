@@ -1,0 +1,39 @@
+$navbar-font: "Montserrat Bold";
+
+@media (min-width: 768px) {
+    .navbar {
+        border-bottom: 0 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navbar{
+    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.5);
+    margin-bottom: 20px;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-family: $navbar-font;
+                color: #6c6c6c;
+                &.active p {
+                    color: #242424;
+                    display: inline-block;
+                    &::after {
+                        display: block;
+                        border-bottom: 3px solid #242424;
+                        width: 22px;
+                        content: "";
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
