@@ -1,0 +1,13 @@
+#contact-us{
+    .contact-us-card {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 40px;
+        .contact-us-text{
+            p{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

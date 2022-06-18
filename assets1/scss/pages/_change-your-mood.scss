@@ -1,0 +1,27 @@
+@media (min-width:992px) {
+    #change-your-mood {
+        .tealeaf {
+            display: inline-block !important;
+        }
+    } 
+}
+
+#change-your-mood {
+    background-image: url("/assets/img/backgroung/berga-ehvalinideyishtir.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .change-your-mood-text {
+        position: relative;
+        z-index: 1;
+    }
+    .tealeaf {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        img {
+            transform: translate(-30%, 0%);
+        }
+    }
+}

@@ -1,0 +1,109 @@
+$navbar-font: "Proxima Nova";
+$navbar-color: #d3ad37;
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex !important;
+        .nav-item {
+            &.active {
+                background-color: rgba($color: #fff, $alpha: 0.15);
+            }
+        }
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+}
+
+nav {
+    box-shadow: 0 3px 20px 1px rgba($color: #000000, $alpha: 0.5);
+    background-color: $navbar-color;
+    padding: 0 !important;
+    margin-bottom: 60px;
+    position: relative;
+    height: 10vh;
+    z-index: 3;
+    &.show {
+        position: fixed;
+        width: 100%;
+        height: 100vh !important;
+        margin: 0;
+        .hamburger {
+            position: absolute !important;
+            top: 15px !important;
+            right: 12px !important;
+        }
+        .navbar-brand {
+            top: 12.5px;
+        }
+        .navbar-nav {
+            margin: 0 !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .navbar-socialmedia-btns{
+            display: inline-block;
+        }
+        &~section,
+        &~footer{
+            display: none !important;
+        }
+    }
+    .hamburger {
+        display: inline-block;
+        margin-left: auto;
+    }
+    .navbar-brand {
+        position: absolute;
+        top: 20%;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 10vh;
+        display: none;
+        .nav-item {
+            background-color: transparent;
+            .nav-link {
+                padding-left: 15px;
+                padding-right: 15px;
+                color: white;
+                width: 100% !important;
+                height: 100% !important;
+                display: flex;
+                align-items: center;
+            }
+            .language-dropdown {
+                position: absolute;
+                right: 0;
+                .btn {
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-socialmedia-btns {
+        position: absolute;
+        bottom: 50px;
+        display: none;
+        ul {
+            display: flex !important;
+            padding-left: 12px !important;
+            list-style: none;
+            li {
+                margin-right: 15px;
+                a {
+                    font-size: 2em;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
