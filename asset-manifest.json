@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.bdb6fd75.css",
-    "main.js": "/static/js/main.f51328aa.js",
+    "main.js": "/static/js/main.8a98c9ef.js",
     "static/js/453.80059710.chunk.js": "/static/js/453.80059710.chunk.js",
+    "static/media/fireboy-and-watergirl.swf": "/static/media/fireboy-and-watergirl.c7040d4dd3b468bf1402.swf",
     "static/media/age-of-war.swf": "/static/media/age-of-war.756f438140d0f870a9e1.swf",
     "static/media/GoodVibes-Demo.ttf": "/static/media/GoodVibes-Demo.15a929edac7204fbf52f.ttf",
     "static/media/backgroundGif.gif": "/static/media/backgroundGif.b13e2ab4d0b811698ad9.gif",
@@ -14,11 +15,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.bdb6fd75.css.map": "/static/css/main.bdb6fd75.css.map",
-    "main.f51328aa.js.map": "/static/js/main.f51328aa.js.map",
+    "main.8a98c9ef.js.map": "/static/js/main.8a98c9ef.js.map",
     "453.80059710.chunk.js.map": "/static/js/453.80059710.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bdb6fd75.css",
-    "static/js/main.f51328aa.js"
+    "static/js/main.8a98c9ef.js"
   ]
 }
