@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bdb6fd75.css",
+    "main.js": "/static/js/main.f51328aa.js",
+    "static/js/453.80059710.chunk.js": "/static/js/453.80059710.chunk.js",
+    "static/media/age-of-war.swf": "/static/media/age-of-war.756f438140d0f870a9e1.swf",
+    "static/media/GoodVibes-Demo.ttf": "/static/media/GoodVibes-Demo.15a929edac7204fbf52f.ttf",
+    "static/media/backgroundGif.gif": "/static/media/backgroundGif.b13e2ab4d0b811698ad9.gif",
+    "static/media/cozyLofiCouple.gif": "/static/media/cozyLofiCouple.1de333c3177a5bb6eb3d.gif",
+    "static/media/bearRidingDuck.gif": "/static/media/bearRidingDuck.d6969ccea0e1394b1147.gif",
+    "static/media/bearWearingDuckHat.gif": "/static/media/bearWearingDuckHat.abecd0d090efd055c1a4.gif",
+    "static/media/Tetris.swf": "/static/media/Tetris.223656bd58d8509154fa.swf",
+    "static/media/Daydream.ttf": "/static/media/Daydream.84eda7c4245e10bffa4b.ttf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.bdb6fd75.css.map": "/static/css/main.bdb6fd75.css.map",
+    "main.f51328aa.js.map": "/static/js/main.f51328aa.js.map",
+    "453.80059710.chunk.js.map": "/static/js/453.80059710.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdb6fd75.css",
+    "static/js/main.f51328aa.js"
+  ]
+}
