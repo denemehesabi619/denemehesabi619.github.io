@@ -1,0 +1,13 @@
+.photos-col{
+	display: flex;
+	justify-content: center;
+	min-height:fit-content;
+	.photos{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.videos{
+	max-width: 100%;
+}
