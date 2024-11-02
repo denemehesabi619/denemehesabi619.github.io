@@ -1,26 +1,29 @@
-import photo1 from '../assets/photos/IMG_2921.png'
-import photo2 from '../assets/photos/IMG_2995.png'
-import photo3 from '../assets/photos/IMG_3026.png'
-import photo4 from '../assets/photos/IMG_3263.png'
-import photo5 from '../assets/photos/IMG_3273.png'
-import photo6 from '../assets/photos/IMG_3397.png'
-import photo7 from '../assets/photos/IMG_3476.png'
-import photo8 from '../assets/photos/IMG_3478.png'
-import photo9 from '../assets/photos/IMG_3526.png'
-import photo10 from '../assets/photos/IMG_3619.png'
-import photo11 from '../assets/photos/IMG_3631.png'
-import photo12 from '../assets/photos/IMG_3638.png'
-import photo13 from '../assets/photos/IMG_3678.png'
-import photo14 from '../assets/photos/526CAD0E-77AA-4EAE-9B89-2ED82338B424.JPG'
-import photo15 from '../assets/photos/f0d7045f-6d42-4e09-a3f5-f4716693c5cc.JPG'
-import photo16 from '../assets/photos/IMG_2736.PNG'
-import photo17 from '../assets/photos/IMG_2738.PNG'
-import photo18 from '../assets/photos/IMG_2925.PNG'
-import photo19 from '../assets/photos/IMG_3167.PNG'
-import photo20 from '../assets/photos/IMG_3693.PNG'
+import { lazy } from 'react';
 
-import video1 from '../assets/videos/32617.mp4'
-import video2 from '../assets/videos/32618.mp4'
+const photo1 = 'https://i.postimg.cc/J7qMtnw6/IMG-3693.png'
+const photo2 = 'https://i.postimg.cc/VNrkCc9S/526-CAD0-E-77-AA-4-EAE-9-B89-2-ED82338-B424.jpg'
+const photo3 = 'https://i.postimg.cc/3J1NM1Jw/f0d7045f-6d42-4e09-a3f5-f4716693c5cc.jpg'
+const photo4 = 'https://i.postimg.cc/FHKRhS7V/IMG-2736.png'
+const photo5 = 'https://i.postimg.cc/pL1drdjb/IMG-2738.png'
+const photo6 = 'https://i.postimg.cc/j5yqMQFt/IMG-2921.png'
+const photo7 = 'https://i.postimg.cc/zfsXwPpx/IMG-2925.png'
+const photo8 = 'https://i.postimg.cc/5y34V9Jr/IMG-2995.png'
+const photo9 = 'https://i.postimg.cc/Wp6br8Z7/IMG-3026.png'
+const photo10 = 'https://i.postimg.cc/PJhX9pgZ/IMG-3167.png'
+const photo11 = 'https://i.postimg.cc/L694VPBF/IMG-3263.png'
+const photo12 = 'https://i.postimg.cc/hP2DZGpz/IMG-3273.png'
+const photo13 = 'https://i.postimg.cc/jj7Rj4KP/IMG-3397.png'
+const photo14 = 'https://i.postimg.cc/SxjyBpvZ/IMG-3476.png'
+const photo15 = 'https://i.postimg.cc/bwMz8BXq/IMG-3478.png'
+const photo16 = 'https://i.postimg.cc/3Rj7Xrkw/IMG-3526.png'
+const photo17 = 'https://i.postimg.cc/zBY8HHXM/IMG-3619.png'
+const photo18 = 'https://i.postimg.cc/Wz2VXRZw/IMG-3631.png'
+const photo19 = 'https://i.postimg.cc/br3h56Hc/IMG-3638.png'
+const photo20 = 'https://i.postimg.cc/7YZDzkwx/IMG-3678.png'
+
+
+const video1 = 'https://streamable.com/95ee7b'
+const video2 = 'https://youtube.com/shorts/Kgeb0vj_jZc'
 
 export const photos = [
 	{
@@ -82,14 +85,5 @@ export const photos = [
 	},
 	{
 		src: photo20
-	},
-]
-
-export const videos = [
-	{
-		src: video1
-	},
-	{
-		src: video2
 	},
 ]

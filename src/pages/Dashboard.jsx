@@ -5,7 +5,7 @@ import Body from '../components/Body'
 import Games from '../components/Games'
 import Photos from '../components/Photos'
 import Videos from '../components/Videos'
-import { photos, videos } from '../service/photos'
+import { photos } from '../service/photos'
 
 export default function Dashboard() {
   return (
@@ -18,7 +18,7 @@ export default function Dashboard() {
 			<Route path='/tetris' Component={Body}/>
 			<Route path='/atesvesu' Component={Body}/>
 			<Route path='/photos' element={<Photos photos={photos}/>}/>
-			<Route path='/videos' element={<Videos videos={videos}/>}/>
+			<Route path='/videos' element={<Videos/>}/>
 
 		</Routes>
 
