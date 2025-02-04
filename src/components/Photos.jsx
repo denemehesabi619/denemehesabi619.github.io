@@ -6,18 +6,18 @@ export default function Photos(props) {
 
 	return (
 		<div className='my-5 d-flex justify-content-center'>
-			<Row className='w-75'>
+			{/* <Row className='w-75'>
 				{
 					photos.map(photo => (
 						<Col className='photos-col' xs={12} md={4}>
 						<div>
 							<img className='m-3 photos' src={photo.src} />
 						</div>
-							
+
 						</Col>
 					))
 				}
-			</Row>
+			</Row> */}
 
 		</div>
 	)

@@ -13,15 +13,15 @@ export default function Nav() {
 				</h1>
 				<img className='nav-img' src={bearRidingDuck} />
 			</div>
-			
-			<div className='countryside-font text-center h3'>
+
+			{/* <div className='countryside-font text-center h3'>
 				<Link to={'/photos'} className='px-3'>
 					[Fotoğraflar]
 				</Link>
 				<Link to={'/videos'}>
 					[Videolar]
 				</Link>
-			</div>
+			</div> */}
 		</div>
 
 	)
