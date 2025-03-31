@@ -13,8 +13,9 @@ export default function Games() {
 				<Link to={'/tetris'} className='p-4 pt-0 text-decoration-none text-dark'>Tetris</Link>
 				<Link to={'/ageofwar'} className='p-4 pt-0 text-decoration-none text-dark'>Age Of War</Link>
 				<Link to={'/atesvesu'} className='p-4 pt-0 text-decoration-none text-dark'>Ates ve Su</Link>
+        <Link to={'/crush-the-castle'} className='p-4 pt-0 text-decoration-none text-dark'>Crush The Castle</Link>
 			</div>
-			
+
 		</div>
 
 		<Routes>
@@ -22,6 +23,7 @@ export default function Games() {
 			<Route exact path='/ageofwar' Component={AgeOfWarGame}/>
 			<Route exact path='/tetris' Component={Tetris}/>
 			<Route exact path='/atesvesu' Component={AtesVeSu}/>
+      <Route exact path='/crush-the-castle' Component={CrushTheCastle} />
 		</Routes>
 	</div>
   )
